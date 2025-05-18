@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/estilos.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <title>Vivero - Contacto</title>
+</head>
+<body>
+     <header>
+        <h1>Vivero Garden</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./informacion.html">Información</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-container">
+        <form>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="3">
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required minlength="3">
+            <label for="mail">Email: </label>
+            <input type="email" id="mail" name="mail" placeholder="Escribe tu email" required>
+            <label for="pais">País: </label>
+            <select name="pais" id="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Perú">Perú</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="España">España</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <label for="comentario">Comentario: </label>
+            <textarea name="comentario" id="comentario" placeholder="Escribe tu comentario/consulta"></textarea>
+
+            <label for="motivo">Motivo de contacto: </label>
+            <input type="radio" id="motivo" name="motivo"><i>Mas informacion</i>
+            <input type="radio" id="motivo" name="motivo"><i>Plantas de interior</i>
+            <input type="radio" id="motivo" name="motivo"><i>Plantas de exterior</i>
+            <input type="radio" id="motivo" name="motivo"><i>Reclamos</i>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+    </div>
+    
+    <footer>
+        <p>Derechos reservados © 2025</p>
+    </footer>
+</body>
+</html>
